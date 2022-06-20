@@ -32,6 +32,8 @@ describe('adding board', ()=>{
            .and('have.text', 'Backlog')
            .and('have.css', 'color', 'rgb(255, 255, 255)')
         addBoardPage.boardLength.should('have.length', 1)
+        addBoardPage.boardTitle.should('be.visible')
+          .and('have.text', boardsTitle)
     })
 
 })

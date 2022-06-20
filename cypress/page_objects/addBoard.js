@@ -32,6 +32,9 @@ class AddBoard{
     get boardLength(){
         return cy.get('.vs-c-task-card__body')
     }
+    get boardTitle(){
+        return cy.get('.vs-c-my-organization__title')
+    }
 
     addingBoard(boardTitle){
         this.getOrganization.click()
